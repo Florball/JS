@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Aprende a programar con ejercicios prácticos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="icon" href="https://banner2.kisspng.com/20180330/rde/kisspng-laptop-computer-icons-computer-monitors-clip-art-laptops-5abe55530550c0.0360239615224231230218.jpg"
+    type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Título -->
+  <h1>Ejercicios prácticos con JavaScript</h1>
+
+  <!-- Ejercicio 1 -->
+  <div class="exercise-1">
+    <h2>Obtiene las iniciales de tu nombre</h2>
+    <label for="name">Ingresa tu nombre:</label>
+    <input type="text" id="name" placeholder="Flor Ballinas" onfocus="this.value=''">
+    <input type="button" id="btn-initials" value="OBTENER INICIALES">
+    <div id="txt-initials"></div>
+    <br>
+  </div>
+
+  <!-- Ejercicio 2 -->
+  <div class="exercise-2">
+    <h2>Convierte tu edad en segundos</h2>
+    <label for="age">¡Hola! ¿Cúantos años tienes?</label>
+    <br>
+    <br>
+    <input type="number" id="age" placeholder="18" onfocus="this.value=''" min="5" max="100">
+    <br>
+    <br>
+    <input type="button" value="CONVERTIR" id="btn-age-convertor">
+    <br>
+    <br>
+    <div id="age-in-seconds"></div>
+    <br>
+  </div>
+
+  <!-- Ejercicio 3 -->
+  <div class="exercise-3">
+    <h2>Convierte los grados Celsius a Farenheit y viceversa</h2>
+    <label for="temperature">Ingresa número de grados Celsius o Farenheit:</label>
+    <input type="number" id="temperature" placeholder="20" onfocus="this.value=''" min="1" max="1000">
+    <input type="button" value="CONVERTIR A CELSIUS" id="btn-convertor-celsius">
+    <input type="button" value="CONVERTIR A FARENHEIT" id="btn-convertor-farenheit">
+    <div id="converted-text"></div>
+    <br>
+  </div>
+
+  <!-- Ejercicio 4 -->
+  <div class="exercise-4">
+    <h2>Elevador</h2>
+    <p id="current-floor">SOTANO</p>
+    <label for="floor">Ingrese N° de piso:</label>
+    <input type="number" id="floor" min="1" max="10" onfocus="this.value=''">
+    <br/>
+    <label for="people">Ingrese N° de personas:</label>
+    <input type="number" id="people" min="1" max="20" onfocus="this.value=''">
+    <br>
+    <input type="button" id="up" value="SUBIR">
+    <input type="button" id="down" value="BAJAR">
+    <div id="txt-total"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
